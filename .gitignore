@@ -1,0 +1,35 @@
+# Secrets
+.env
+.env.*
+*.key
+*.pem
+*.p12
+*.pfx
+*secret*
+*token*
+*apikey*
+*api-key*
+
+# CloudCLI / Claude local state
+.cloudcli/
+.claude/
+.claude-code-router/
+auth.db
+*.db
+*.sqlite
+*.sqlite3
+logs/
+*.log
+
+# Dependencies and generated files
+node_modules/
+dist/
+build/
+tmp/
+temp/
+
+# OS/editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
