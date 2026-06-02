@@ -23,7 +23,15 @@ claude-sonnet-4-6-thinking
 
 ## 一键安装
 
-在 PowerShell 中进入本目录，然后运行：
+不想 clone 仓库时，直接在 PowerShell 运行这一条：
+
+```powershell
+powershell -ExecutionPolicy Bypass -Command "$p=Join-Path $env:TEMP 'setup-cloudcli-comfly.ps1'; Invoke-WebRequest 'https://raw.githubusercontent.com/kiki348/cloudcli-comfly-kit/main/setup-cloudcli-comfly.ps1' -OutFile $p; & $p"
+```
+
+脚本会提示输入中转站 API key。
+
+如果已经 clone 了仓库，也可以在 PowerShell 中进入本目录，然后运行：
 
 ```powershell
 powershell -ExecutionPolicy Bypass -File .\setup-cloudcli-comfly.ps1
